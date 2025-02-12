@@ -1,1 +1,16 @@
-우리나라 좋은나라
+1. 깃은 버전관리 시스템
+commit을 할 때마다 버전이 1씩 올라가
+그런데 작업 실수 할 때마다 버전이 올라가면 버전 관리가 어렵다
+    -login 담당자가 login.html을 만들고 실수로 html까지 commit을
+    version 1. 로그인 구현
+    version 2. login.html 삭제
+위와 같은 상황을 줄이기 위해 staging 영역이라는 임시작업영역을 도입
+
+2. git init
+- 현재폴더를 git 프로그램으로 관리하겠다
+
+3. git add 와 git reset으로 스테이징 영역에 추가/삭제
+    - 실수를 해도 버전으로 남지 않아
+
+4. 작업이 일단락되면 commit한다
+    - git commit -m "작업내용" : 커밋할땐 반드시 메시지(작업내용) 남기기
