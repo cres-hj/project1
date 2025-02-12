@@ -14,3 +14,14 @@ commit을 할 때마다 버전이 1씩 올라가
 
 4. 작업이 일단락되면 commit한다
     - git commit -m "작업내용" : 커밋할땐 반드시 메시지(작업내용) 남기기
+
+5. 브랜치 이름을 main으로 변경
+    git의 기본 branch는 master, github는 main을 사용
+    git branch -M main으로
+
+6. git hub 원격저장소를 등록
+    git remote rigin https://github.com/cres-hj/project1.git
+
+7. 원격저장소에 push 한다
+    git push -u origin
+    -u는 원격저장소 이름을 저장. 다음부터는 git push origin main
