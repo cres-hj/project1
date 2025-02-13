@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html의 인라인요쇼/블록요소</title>
+    <style>
+        #first {
+            background-color: pink;
+        }
+
+        #second {
+            background-color: lavender;
+        }
+
+        #third {
+            background-color: blueviolet;
+            display: block
+        }
+
+        #fourth {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- block는 한 줄에 하나 배치, inline 요소는 내용의 너비만큼 차지 -->
+    <div>
+        <div id="first">A</div>
+        <div id="second">B</div>
+        <!-- div는 한 줄을 차지하는구나 -->
+    </div>
+    <div>
+        <span id="third">C</span>
+        <span id="fourth">D</span>
+        <!-- span은 한 내용만큼만 차지 -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자를 어떻게 줄거냐 */
+        /* 태그선택자를 주면 (ex p태그 같은거 바로 넣는거) */
+        p {
+            text-decoration: underline;
+        }
+
+        /* 나는 지금 두번째 p요소에 있는 글자를 두껍게 하고싶어 -> id 부여 */
+        #second {
+            font-weight: bold;
+        }
+
+        /* id랑 name 속성 부여 가능한데 둘 다 이름이지만 쓰는 방식 달라 */
+
+        /* 3번째 p를 css이탤릭으로 */
+        #third {
+            font-style: italic;
+        }
+
+        /* class선택자: 여러개(1개 이상)를 지정 */
+        .red {
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="red">우리나라</p>
+    <p id="second">좋은나라</p>
+    <p id="third">대한민국</p>
+    <p class="red">네번째줄</p>
+    <!-- 선택자와 우선순위
+     -id 선택자: 우선순위 100. 요소 1개를 선택
+    -class 선택자: 우선순위 10. 요소 여러개(1개 이상)를 선택
+    -태그 선택자: 우선순위 1. 특정 요소를 선택 -->
+
+</body>
+
+</html>
